@@ -146,6 +146,12 @@ p {
 	margin-top: 2rem;
 	font-size: 1.2rem;
 }
+
+.button:active {
+    background-color: #45a049; /* Darker green */
+    transform: scale(0.95); /* Slightly shrink the button on click */
+}
+
 /*
   =============== 
   Tours
@@ -225,4 +231,12 @@ main {
 	border: 1px solid var(--clr-red-dark);
 	padding: 0.25rem 0.5rem;
 	border-radius: var(--radius);
+}
+.delete-btn:active {
+    background-color: #45a049; /* Darker green */
+    transform: scale(0.8); /* Slightly shrink the button on click */
+}
+
+.delete-btn:hover {
+    background-color:yellow; /* Darker blue on hover */
 }

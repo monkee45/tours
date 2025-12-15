@@ -8,6 +8,10 @@ function App() {
   const [tours, setTours] = useState([]);
   const [loading, setLoading] = useState(true);
  
+  function removeTour(tourID) {
+    setTours((prevTours) => prevTours.filter((tour) => tour.id !== tourID))
+  }
+
   useEffect( () => { 
     fetchTours() 
   },[]) 
@@ -30,7 +34,7 @@ function App() {
 
   return (
     <main>
-      <Tours tours={tours} />
+      <Tours tours={tours} removeTour={removeTour} />
     </main>
   );  
 }
